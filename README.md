@@ -39,7 +39,7 @@ No. It is a fish game.
 
 ### Do the fish breed? If yes, how do I prevent that to stop potential overgrowth in their tank?
 
-Ummm no? They don't breed. The tank isn't real.
+Contraception.
 
 
 ### I really admire your work?
