@@ -9,7 +9,7 @@ Yes and it's in fact encouraged. We have 62 E-Sport teams across the country.
 
 ### Is there a mascot?
 
-Yes. Clelphant James is the mascot.
+Yes. Igor is the mascot.
 
 
 ### Is SwitchTank Online a ripoff of SwitchZoo?
