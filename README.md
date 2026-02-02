@@ -72,6 +72,24 @@ Christian Bozzo & Joshua Risbon
 Okay it is.
 
 
+### How to pronounce Bphnlya?
+
+b̆↓ɸnʎ.
+
+
+### Is Bphnlya a hero or a villain?
+
+Though Bphnlya shows heroistic traits, espeecially his kindness and gratitude, he is a villain who aims to eat all the other fish in SwitchTank. 
+
+
+### Are Bphnlya and Wakalakakamen real fish? 
+
+Thankfully, no. They are to show the dangers of animal eugenics. 
+
+
+### This taught me a lot about fish.
+
+I know.
 
 
 
