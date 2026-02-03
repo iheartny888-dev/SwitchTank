@@ -120,7 +120,7 @@ body {
 .bg-selector {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 50px;
 }
 
 .bg-selector img {
@@ -139,5 +139,5 @@ body {
 }
 
 .bg-selector img.active {
-    border: 3px solid #FFD700;
+    border: 6px solid #FFD700;
 }
