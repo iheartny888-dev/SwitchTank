@@ -82,6 +82,7 @@ body {
     gap: 15px;
     max-width: 1100px;
     margin: 0 auto;
+    justify-items: center;
 }
 
 .fish-button {
@@ -160,5 +161,45 @@ body {
     border: 6px solid #FFD700;
 }
 
+.dropbtn {
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  font-size: 16px;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background-color: #f1f1f1;
+  min-width: 600px;
+  max-width: 90vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: hsl(205, 46%, 51%);}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: hsl(205, 46%, 51%);}
+.dropdown:hover .dropbtn {border: 6px solid #FFD700;}
