@@ -203,3 +203,13 @@ body {
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: hsl(205, 46%, 51%);}
 .dropdown:hover .dropbtn {border: 6px solid #FFD700;}
+
+.info-button {
+    position: fixed; 
+    top: 20px;
+    left: 20px;
+    font-size: 50px; 
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 999;
+}
