@@ -164,13 +164,10 @@ const tankImage = document.getElementById('tankImage');
 
 bgButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Change tank image
         tankImage.src = button.dataset.bg;
 
-        // Remove active from all
         bgButtons.forEach(b => b.classList.remove('active'));
 
-        // Add active to clicked ones with same bg
         bgButtons.forEach(b => {
             if (b.dataset.bg === button.dataset.bg) {
                 b.classList.add('active');
