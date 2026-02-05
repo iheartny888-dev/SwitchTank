@@ -49,6 +49,7 @@ body {
 }
 
 .tank-box {
+    position: relative;
     width: 900px;
     max-width: 95%;
     text-align: center;
