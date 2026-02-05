@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
@@ -62,6 +53,21 @@
             margin-bottom: 50px;
             padding-bottom: 20px;
             border-bottom: 3px solid #FFD700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .fish-info {
+            flex: 1;
+        }
+
+        .fish-block img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 12px;
         }
 
         .fish-block h2 {
@@ -80,263 +86,349 @@
 <body>
 
     <div class="page-wrapper">
-
         <header class="site-header">
-            <img src="Assets/Graphics/NewLogo.png" alt="SwitchTank Logo" class="logo">
+            <a href="index.html">
+                <img src="Assets/Graphics/NewLogo.png" alt="SwitchTank Logo" class="logo">
+            </a>
         </header>
+
 
         <main class="main-container">
 
             <div class="fish-block">
-                <h2>Armored Catfish</h2>
-                <h3>Loricariidae</h3>
-                <h3>Environment: Freshwater rivers and streams in South America</h3>
-                <h3>Temper: Peaceful, bottom-dwelling scavengers</h3>
-                <h3>Diet: Algae, plant matter, small insects, detritus</h3>
-                <h3>Joshua Rating: 6/10</h3>
+                <div class="fish-info">
+                    <h2>Armored Catfish</h2>
+                    <h3><b>Scientific Name:</b> Loricariidae</h3>
+                    <h3><b>Environment:</b> Freshwater rivers and streams in South America</h3>
+                    <h3><b>Temper:</b> Peaceful, bottom-dwelling scavengers</h3>
+                    <h3><b>Diet:</b> Algae, plant matter, small insects, detritus</h3>
+                    <h3><b>Joshua Rating:</b> 6/10</h3>
+                </div>
+                <img src="Assets/Base/ArmoredCatfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Barracuda</h2>
-                <h3>Sphyraena barracuda</h3>
-                <h3>Environment: Tropical and subtropical oceans, reefs, and open water</h3>
-                <h3>Temper: Aggressive predator</h3>
-                <h3>Diet: Fish, squid, smaller marine animals</h3>
-                <h3>Joshua Rating: 4/10</h3>
+                <div class="fish-info">
+                    <h2>Barracuda</h2>
+                    <h3><b>Scientific Name:</b> Sphyraena barracuda</h3>
+                    <h3><b>Environment:</b> Tropical and subtropical oceans, reefs, and open water</h3>
+                    <h3><b>Temper:</b> Aggressive predator</h3>
+                    <h3><b>Diet:</b> Fish, squid, smaller marine animals</h3>
+                    <h3><b>Joshua Rating:</b> 4/10</h3>
+                </div>
+                <img src="Assets/Base/Barracuda.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Bettafish</h2>
-                <h3>Betta splendens</h3>
-                <h3>Environment: Warm freshwater ponds, rice paddies, and slow streams</h3>
-                <h3>Temper: Very territorial (especially males)</h3>
-                <h3>Diet: Insects, larvae, small crustaceans</h3>
-                <h3>Joshua Rating: 8/10</h3>
+                <div class="fish-info">
+                    <h2>Bettafish</h2>
+                    <h3><b>Scientific Name:</b> Betta splendens</h3>
+                    <h3><b>Environment:</b> Warm freshwater ponds, rice paddies, and slow streams</h3>
+                    <h3><b>Temper:</b> Very territorial (especially males)</h3>
+                    <h3><b>Diet:</b> Insects, larvae, small crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 8/10</h3>
+                </div>
+                <img src="Assets/Base/Betta.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Black Bass</h2>
-                <h3>Micropterus salmoides</h3>
-                <h3>Environment: Freshwater lakes, ponds, and rivers</h3>
-                <h3>Temper: Aggressive and territorial</h3>
-                <h3>Diet: Fish, insects, frogs, crayfish</h3>
-                <h3>Joshua Rating: 2/10</h3>
+                <div class="fish-info">
+                    <h2>Black Bass</h2>
+                    <h3><b>Scientific Name:</b> Micropterus salmoides</h3>
+                    <h3><b>Environment:</b> Freshwater lakes, ponds, and rivers</h3>
+                    <h3><b>Temper:</b> Aggressive and territorial</h3>
+                    <h3><b>Diet:</b> Fish, insects, frogs, crayfish</h3>
+                    <h3><b>Joshua Rating:</b> 2/10</h3>
+                </div>
+                <img src="Assets/Base/BlackBass.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Blue Tang</h2>
-                <h3>Paracanthurus hepatus</h3>
-                <h3>Environment: Coral reefs in warm tropical oceans</h3>
-                <h3>Temper: Mostly peaceful</h3>
-                <h3>Diet: Algae, plankton, small invertebrates</h3>
-                <h3>Joshua Rating: 6/10</h3>
+                <div class="fish-info">
+                    <h2>Blue Tang</h2>
+                    <h3><b>Scientific Name:</b> Paracanthurus hepatus</h3>
+                    <h3><b>Environment:</b> Coral reefs in warm tropical oceans</h3>
+                    <h3><b>Temper:</b> Mostly peaceful</h3>
+                    <h3><b>Diet:</b> Algae, plankton, small invertebrates</h3>
+                    <h3><b>Joshua Rating:</b> 6/10</h3>
+                </div>
+                <img src="Assets/Base/BlueTang.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Bphnlya</h2>
-                <h3>Abominatio oceani</h3>
-                <h3>Environemnt: In parts of the world ONLY under sunshine and rainbows</h3>
-                <h3>Temper: Unbelievably loving, loves quality time</h3>
-                <h3>Diet: Cotton candy, krill, algae</h3>
-                <h3>Joshua Rating: -10/10</h3>
+                <div class="fish-info">
+                    <h2>Bphnlya</h2>
+                    <h3><b>Scientific Name:</b> Abominatio oceani</h3>
+                    <h3><b>Environment:</b> In parts of the world ONLY under sunshine and rainbows</h3>
+                    <h3><b>Temper:</b> Unbelievably loving, loves quality time</h3>
+                    <h3><b>Diet:</b> Cotton candy, krill, algae</h3>
+                    <h3><b>Joshua Rating:</b> -10/10</h3>
+                </div>
+                <img src="Assets/Base/Bphnlya.png">
             </div>
 
             <div class="fish-block">
-                <h2>Cardinal Tetra</h2>
-                <h3>Paracheirodon axelrodi</h3>
-                <h3>Environment: Freshwater rivers in the Amazon Basin</h3>
-                <h3>Temper: Peaceful schooling fish</h3>
-                <h3>Diet: Small insects, larvae, worms, plankton</h3>
-                <h3>Joshua Rating: 8/10</h3>
+                <div class="fish-info">
+                    <h2>Cardinal Tetra</h2>
+                    <h3><b>Scientific Name:</b> Paracheirodon axelrodi</h3>
+                    <h3><b>Environment:</b> Freshwater rivers in the Amazon Basin</h3>
+                    <h3><b>Temper:</b> Peaceful schooling fish</h3>
+                    <h3><b>Diet:</b> Small insects, larvae, worms, plankton</h3>
+                    <h3><b>Joshua Rating:</b> 8/10</h3>
+                </div>
+                <img src="Assets/Base/CardinalTetra.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Mussel</h2>
-                <h3>Mytilus</h3>
-                <h3>Environment: Freshwater rivers, lakes, and streams (some species are marine)</h3>
-                <h3>Temper: Passive</h3>
-                <h3>Diet: Filter-feeds algae, plankton, and organic particles</h3>
-                <h3>Joshua Rating: 2/10</h3>
+                <div class="fish-info">
+                    <h2>Mussel</h2>
+                    <h3><b>Scientific Name:</b> Mytilus</h3>
+                    <h3><b>Environment:</b> Freshwater rivers, lakes, and streams (some species are marine)</h3>
+                    <h3><b>Temper:</b> Passive</h3>
+                    <h3><b>Diet:</b> Filter-feeds algae, plankton, and organic particles</h3>
+                    <h3><b>Joshua Rating:</b> 2/10</h3>
+                </div>
+                <img src="Assets/Base/Clam.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Clownfish</h2>
-                <h3>Amphiprion ocellaris</h3>
-                <h3>Environment: Warm coral reefs, usually near sea anemones</h3>
-                <h3>Temper: Semi-aggressive, territorial around anemone</h3>
-                <h3>Diet: Algae, plankton, small crustaceans</h3>
-                <h3>Joshua Rating: 3/10</h3>
+                <div class="fish-info">
+                    <h2>Clownfish</h2>
+                    <h3><b>Scientific Name:</b> Amphiprion ocellaris</h3>
+                    <h3><b>Environment:</b> Warm coral reefs, usually near sea anemones</h3>
+                    <h3><b>Temper:</b> Semi-aggressive, territorial around anemone</h3>
+                    <h3><b>Diet:</b> Algae, plankton, small crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 3/10</h3>
+                </div>
+                <img src="Assets/Base/ClownFish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Coelacanth</h2>
-                <h3>Latimeria chalumnae</h3>
-                <h3>Environment: Deep ocean caves and slopes</h3>
-                <h3>Temper: Calm, slow-moving</h3>
-                <h3>Diet: Fish, squid, smaller marine animals</h3>
-                <h3>Joshua Rating: 3/10</h3>
+                <div class="fish-info">
+                    <h2>Coelacanth</h2>
+                    <h3><b>Scientific Name:</b> Latimeria chalumnae</h3>
+                    <h3><b>Environment:</b> Deep ocean caves and slopes</h3>
+                    <h3><b>Temper:</b> Calm, slow-moving</h3>
+                    <h3><b>Diet:</b> Fish, squid, smaller marine animals</h3>
+                    <h3><b>Joshua Rating:</b> 3/10</h3>
+                </div>
+                <img src="Assets/Base/Coelacanth.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Demon Stinger</h2>
-                <h3>Synanceia verrucosa</h3>
-                <h3>Environment: Shallow tropical reefs and sandy bottoms</h3>
-                <h3>Temper: Extremely dangerous defensive fish</h3>
-                <h3>Diet: Small fish and crustaceans</h3>
-                <h3>Joshua Rating: 10/10</h3>
+                <div class="fish-info">
+                    <h2>Demon Stinger</h2>
+                    <h3><b>Scientific Name:</b> Synanceia verrucosa</h3>
+                    <h3><b>Environment:</b> Shallow tropical reefs and sandy bottoms</h3>
+                    <h3><b>Temper:</b> Extremely dangerous defensive fish</h3>
+                    <h3><b>Diet:</b> Small fish and crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 10/10</h3>
+                </div>
+                <img src="Assets/Base/DemonStinger.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Emperor Angelfish</h2>
-                <h3>Pomacanthus imperator</h3>
-                <h3>Environment: Coral reefs in the Indo-Pacific</h3>
-                <h3>Temper: Semi-aggressive</h3>
-                <h3>Diet: Sponges, algae, small invertebrates</h3>
-                <h3>Joshua Rating: 100000/10</h3>
+                <div class="fish-info">
+                    <h2>Emperor Angelfish</h2>
+                    <h3><b>Scientific Name:</b> Pomacanthus imperator</h3>
+                    <h3><b>Environment:</b> Coral reefs in the Indo-Pacific</h3>
+                    <h3><b>Temper:</b> Semi-aggressive</h3>
+                    <h3><b>Diet:</b> Sponges, algae, small invertebrates</h3>
+                    <h3><b>Joshua Rating:</b> 100000/10</h3>
+                </div>
+                <img src="Assets/Base/EmperorAngelfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Flounder</h2>
-                <h3>Paralichthys</h3>
-                <h3>Environment: Coastal ocean floors and sandy seabeds</h3>
-                <h3>Temper: Calm ambush predator</h3>
-                <h3>Diet: Small fish, shrimp, worms</h3>
-                <h3>Joshua Rating: 9/10</h3>
+                <div class="fish-info">
+                    <h2>Flounder</h2>
+                    <h3><b>Scientific Name:</b> Paralichthys</h3>
+                    <h3><b>Environment:</b> Coastal ocean floors and sandy seabeds</h3>
+                    <h3><b>Temper:</b> Calm ambush predator</h3>
+                    <h3><b>Diet:</b> Small fish, shrimp, worms</h3>
+                    <h3><b>Joshua Rating:</b> 9/10</h3>
+                </div>
+                <img src="Assets/Base/Flounder.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Great White Shark</h2>
-                <h3>Carcharodon carcharias</h3>
-                <h3>Environment: Coastal and open ocean waters worldwide</h3>
-                <h3>Temper: Predatory, curious</h3>
-                <h3>Diet: Fish, seals, sea lions, carrion</h3>
-                <h3>Joshua Rating: 8.5/10</h3>
+                <div class="fish-info">
+                    <h2>Great White Shark</h2>
+                    <h3><b>Scientific Name:</b> Carcharodon carcharias</h3>
+                    <h3><b>Environment:</b> Coastal and open ocean waters worldwide</h3>
+                    <h3><b>Temper:</b> Predatory, curious</h3>
+                    <h3><b>Diet:</b> Fish, seals, sea lions, carrion</h3>
+                    <h3><b>Joshua Rating:</b> 8.5/10</h3>
+                </div>
+                <img src="Assets/Base/GreatWhiteShark.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Human</h2>
-                <h3>Homo sapiens</h3>
-                <h3>Environment: Every continent on Earth, usually in warmer climates</h3>
-                <h3>Temper: Highly variable</h3>
-                <h3>Diet: Omnivore (plants, meat, processed foods)</h3>
-                <h3>Joshua Rating: 6/10</h3>
+                <div class="fish-info">
+                    <h2>Human</h2>
+                    <h3><b>Scientific Name:</b> Homo sapiens</h3>
+                    <h3><b>Environment:</b> Every continent on Earth, usually in warmer climates</h3>
+                    <h3><b>Temper:</b> Highly variable</h3>
+                    <h3><b>Diet:</b> Omnivore (plants, meat, processed foods)</h3>
+                    <h3><b>Joshua Rating:</b> 6/10</h3>
+                </div>
+                <img src="Assets/Base/Human.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Japanese Lobster</h2>
-                <h3>Panulirus japonicus</h3>
-                <h3>Environment: Rocky reefs and coastal waters near Japan</h3>
-                <h3>Temper: Defensive, mostly peaceful unless threatened</h3>
-                <h3>Diet: Mollusks, small fish, algae, detritus</h3>
-                <h3>Joshua Rating: 6/10</h3>
+                <div class="fish-info">
+                    <h2>Japanese Lobster</h2>
+                    <h3><b>Scientific Name:</b> Panulirus japonicus</h3>
+                    <h3><b>Environment:</b> Rocky reefs and coastal waters near Japan</h3>
+                    <h3><b>Temper:</b> Defensive, mostly peaceful unless threatened</h3>
+                    <h3><b>Diet:</b> Mollusks, small fish, algae, detritus</h3>
+                    <h3><b>Joshua Rating:</b> 6/10</h3>
+                </div>
+                <img src="Assets/Base/JapaneseLobster.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Lionfish</h2>
-                <h3>Pterois volitans</h3>
-                <h3>Environment: Coral reefs and warm coastal waters</h3>
-                <h3>Temper: Calm but venomous and dangerous</h3>
-                <h3>Diet: Small fish, shrimp, crustaceans</h3>
-                <h3>Joshua Rating: 9.5/10</h3>
+                <div class="fish-info">
+                    <h2>Lionfish</h2>
+                    <h3><b>Scientific Name:</b> Pterois volitans</h3>
+                    <h3><b>Environment:</b> Coral reefs and warm coastal waters</h3>
+                    <h3><b>Temper:</b> Calm but venomous and dangerous</h3>
+                    <h3><b>Diet:</b> Small fish, shrimp, crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 9.5/10</h3>
+                </div>
+                <img src="Assets/Base/Lionfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Mackerel Tuna</h2>
-                <h3>Euthynnus affinis</h3>
-                <h3>Environment: Warm ocean waters near the surface</h3>
-                <h3>Temper: Fast, aggressive predator</h3>
-                <h3>Diet: Fish, squid, crustaceans</h3>
-                <h3>Joshua Rating: 2/10</h3>
+                <div class="fish-info">
+                    <h2>Mackerel Tuna</h2>
+                    <h3><b>Scientific Name:</b> Euthynnus affinis</h3>
+                    <h3><b>Environment:</b> Warm ocean waters near the surface</h3>
+                    <h3><b>Temper:</b> Fast, aggressive predator</h3>
+                    <h3><b>Diet:</b> Fish, squid, crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 2/10</h3>
+                </div>
+                <img src="Assets/Base/MackerelTuna.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Marbled Rockfish</h2>
-                <h3>Sebastiscus marmoratus</h3>
-                <h3>Environment: Coastal rocky reefs and kelp forests</h3>
-                <h3>Temper: Calm ambush predator</h3>
-                <h3>Diet: Small fish, shrimp, crabs</h3>
-                <h3>Joshua Rating: 8.5/10</h3>
+                <div class="fish-info">
+                    <h2>Marbled Rockfish</h2>
+                    <h3><b>Scientific Name:</b> Sebastiscus marmoratus</h3>
+                    <h3><b>Environment:</b> Coastal rocky reefs and kelp forests</h3>
+                    <h3><b>Temper:</b> Calm ambush predator</h3>
+                    <h3><b>Diet:</b> Small fish, shrimp, crabs</h3>
+                    <h3><b>Joshua Rating:</b> 8.5/10</h3>
+                </div>
+                <img src="Assets/Base/MarbledRockfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Moray Eel</h2>
-                <h3>Muraena helena</h3>
-                <h3>Environment: Coral reefs and rocky crevices</h3>
-                <h3>Temper: Aggressive when provoked</h3>
-                <h3>Diet: Fish, octopus, crabs</h3>
-                <h3>Joshua Rating: 3.5/10</h3>
+                <div class="fish-info">
+                    <h2>Moray Eel</h2>
+                    <h3><b>Scientific Name:</b> Muraena helena</h3>
+                    <h3><b>Environment:</b> Coral reefs and rocky crevices</h3>
+                    <h3><b>Temper:</b> Aggressive when provoked</h3>
+                    <h3><b>Diet:</b> Fish, octopus, crabs</h3>
+                    <h3><b>Joshua Rating:</b> 3.5/10</h3>
+                </div>
+                <img src="Assets/Base/MorayEel.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>North Pacific Giant Octopus</h2>
-                <h3>Enteroctopus dofleini</h3>
-                <h3>Environment: Cold ocean waters, rocky seafloors, caves</h3>
-                <h3>Temper: Intelligent, curious, can be aggressive</h3>
-                <h3>Diet: Crabs, shellfish, fish</h3>
-                <h3>Joshua Rating: 10/10</h3>
+                <div class="fish-info">
+                    <h2>North Pacific Giant Octopus</h2>
+                    <h3><b>Scientific Name:</b> Enteroctopus dofleini</h3>
+                    <h3><b>Environment:</b> Cold ocean waters, rocky seafloors, caves</h3>
+                    <h3><b>Temper:</b> Intelligent, curious, can be aggressive</h3>
+                    <h3><b>Diet:</b> Crabs, shellfish, fish</h3>
+                    <h3><b>Joshua Rating:</b> 10/10</h3>
+                </div>
+                <img src="Assets/Base/NorthPacificGiantOctopus.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Pennant Coralfish</h2>
-                <h3>Heniochus acuminatus</h3>
-                <h3>Environment: Coral reefs in the Indo-Pacific</h3>
-                <h3>Temper: Mostly peaceful</h3>
-                <h3>Diet: Small invertebrates, plankton, coral polyps</h3>
-                <h3>Joshua Rating: 9.5/10</h3>
+                <div class="fish-info">
+                    <h2>Pennant Coralfish</h2>
+                    <h3><b>Scientific Name:</b> Heniochus acuminatus</h3>
+                    <h3><b>Environment:</b> Coral reefs in the Indo-Pacific</h3>
+                    <h3><b>Temper:</b> Mostly peaceful</h3>
+                    <h3><b>Diet:</b> Small invertebrates, plankton, coral polyps</h3>
+                    <h3><b>Joshua Rating:</b> 9.5/10</h3>
+                </div>
+                <img src="Assets/Base/PennantCoralfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Piranha</h2>
-                <h3>Pygocentrus nattereri</h3>
-                <h3>Environment: Freshwater rivers and lakes in South America</h3>
-                <h3>Temper: Aggressive and defensive in groups</h3>
-                <h3>Diet: Fish, insects, plants, carrion</h3>
-                <h3>Joshua Rating: 9.5/10</h3>
+                <div class="fish-info">
+                    <h2>Piranha</h2>
+                    <h3><b>Scientific Name:</b> Pygocentrus nattereri</h3>
+                    <h3><b>Environment:</b> Freshwater rivers and lakes in South America</h3>
+                    <h3><b>Temper:</b> Aggressive and defensive in groups</h3>
+                    <h3><b>Diet:</b> Fish, insects, plants, carrion</h3>
+                    <h3><b>Joshua Rating:</b> 9.5/10</h3>
+                </div>
+                <img src="Assets/Base/Piranha.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Prawn</h2>
-                <h3>Macrobrachium rosenbergii</h3>
-                <h3>Environment: Oceans, coastal waters, and some freshwater habitats</h3>
-                <h3>Temper: Peaceful scavenger</h3>
-                <h3>Diet: Algae, plankton, detritus, small organisms</h3>
-                <h3>Joshua Rating: 1/10</h3>
+                <div class="fish-info">
+                    <h2>Prawn</h2>
+                    <h3><b>Scientific Name:</b> Macrobrachium rosenbergii</h3>
+                    <h3><b>Environment:</b> Oceans, coastal waters, and some freshwater habitats</h3>
+                    <h3><b>Temper:</b> Peaceful scavenger</h3>
+                    <h3><b>Diet:</b> Algae, plankton, detritus, small organisms</h3>
+                    <h3><b>Joshua Rating:</b> 1/10</h3>
+                </div>
+                <img src="Assets/Base/Prawn.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Seahorse</h2>
-                <h3>Hippocampus</h3>
-                <h3>Environment: Shallow coastal waters, seagrass beds, coral reefs</h3>
-                <h3>Temper: Peaceful</h3>
-                <h3>Diet: Tiny shrimp, plankton, small crustaceans</h3>
-                <h3>Joshua Rating: 10/10</h3>
+                <div class="fish-info">
+                    <h2>Seahorse</h2>
+                    <h3><b>Scientific Name:</b> Hippocampus</h3>
+                    <h3><b>Environment:</b> Shallow coastal waters, seagrass beds, coral reefs</h3>
+                    <h3><b>Temper:</b> Peaceful</h3>
+                    <h3><b>Diet:</b> Tiny shrimp, plankton, small crustaceans</h3>
+                    <h3><b>Joshua Rating:</b> 10/10</h3>
+                </div>
+                <img src="Assets/Base/Seahorse.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Swordfish</h2>
-                <h3>Xiphias gladius</h3>
-                <h3>Environment: Open ocean waters worldwide</h3>
-                <h3>Temper: Aggressive predator</h3>
-                <h3>Diet: Fish, squid</h3>
-                <h3>Joshua Rating: 8.5/10</h3>
+                <div class="fish-info">
+                    <h2>Swordfish</h2>
+                    <h3><b>Scientific Name:</b> Xiphias gladius</h3>
+                    <h3><b>Environment:</b> Open ocean waters worldwide</h3>
+                    <h3><b>Temper:</b> Aggressive predator</h3>
+                    <h3><b>Diet:</b> Fish, squid</h3>
+                    <h3><b>Joshua Rating:</b> 8.5/10</h3>
+                </div>
+                <img src="Assets/Base/Swordfish.jpg">
             </div>
 
             <div class="fish-block">
-                <h2>Wakalakakamen</h2>
-                <h3>Pulchra pisces</h3>
-                <h3>Environment: Found only in times of despair and anguish</h3>
-                <h3>Temper: Destroys any ecosystem it is in, very angry</h3>
-                <h3>Diet: Homo sapiens, Great White Sharks, entire Semi-Trucks, algae</h3>
-                <h3>Joshua Rating: 4/10</h3>
+                <div class="fish-info">
+                    <h2>Wakalakakamen</h2>
+                    <h3><b>Scientific Name:</b> Pulchra pisces</h3>
+                    <h3><b>Environment:</b> Found only in times of despair and anguish</h3>
+                    <h3><b>Temper:</b> Destroys any ecosystem it is in, very angry</h3>
+                    <h3><b>Diet:</b> Homo sapiens, Great White Sharks, entire Semi-Trucks, algae</h3>
+                    <h3><b>Joshua Rating:</b> 4/10</h3>
+                </div>
+                <img src="Assets/Base/Wakalakakamen.png">
             </div>
 
             <div class="fish-block">
-                <h2>Xiphactinus</h2>
-                <h3>Xiphactinus audax</h3>
-                <h3>Environment: Ancient oceans during the Late Cretaceous period</h3>
-                <h3>Temper: Extremely aggressive predator (likely)</h3>
-                <h3>Diet: Fish and marine reptiles</h3>
-                <h3>Joshua Rating: 10/10</h3>
+                <div class="fish-info">
+                    <h2>Xiphactinus</h2>
+                    <h3><b>Scientific Name:</b> Xiphactinus audax</h3>
+                    <h3><b>Environment:</b> Ancient oceans during the Late Cretaceous period</h3>
+                    <h3><b>Temper:</b> Extremely aggressive predator (likely)</h3>
+                    <h3><b>Diet:</b> Fish and marine reptiles</h3>
+                    <h3><b>Joshua Rating:</b> 10/10</h3>
+                </div>
+                <img src="Assets/Base/Xiphactinus.jpg">
             </div>
 
         </main>

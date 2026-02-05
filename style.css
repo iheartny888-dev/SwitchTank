@@ -213,3 +213,29 @@ body {
     cursor: pointer;
     z-index: 999;
 }
+
+.fish-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.fish-text {
+    flex: 1;
+}
+
+.fish-img {
+    width: 140px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.fish-block img:hover {
+    cursor: default;
+}
