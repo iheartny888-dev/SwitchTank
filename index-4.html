@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLEASE Feed the Fish!</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://media.istockphoto.com/id/956840842/vector/pattern-seamless-abstract-background-chevron-gold-color-and-line-geometric-line-vector.jpg?s=612x612&w=0&k=20&c=aNwh8Ou7hhTRek66NHKbDKZo61Jx-8p0MYT7oIGDRIc=");
+            background-repeat: repeat;
+            background-size: 500px;
+        }
+
+        .page-wrapper {
+            padding: 25px 0;
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.92);
+            border-radius: 15px;
+            box-shadow:
+                rgba(0, 0, 0, 0.17) 0px -23px 15px inset,
+                rgba(0, 0, 0, 0.15) 0px -10px 40px inset,
+                rgba(0, 0, 0, 0.1) 0px -29px 50px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4500;
+        }
+
+        .fish-image {
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .question {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .options {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .option {
+            margin: 8px 0;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .result {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #0d73e8;
+            color: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .score {
+            margin-top: 30px;
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <header class="site-header">
+            <a href="index.html">
+                <img src="Assets/Graphics/NewLogo.png" alt="SwitchTank Logo" class="logo">
+            </a>
+        </header>
+
+        <div class="container">
+            <h1>PLEASE Feed the Fish!</h1>
+
+            <img src="Assets/Base/Wakalakakamen.png" alt="Wakalakakamen" class="fish-image">
+
+            <form id="quizForm">
+
+                <div class="question">1. What does Wakalakakamen like to eat?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q1" value="A"> Homo sapiens, Great White Sharks, entire Semi-Trucks, algae</div>
+                    <div class="option"><input type="radio" name="q1" value="B"> Algae, plankton, small insects</div>
+                    <div class="option"><input type="radio" name="q1" value="C"> Fish, squid, smaller marine animals</div>
+                    <div class="option"><input type="radio" name="q1" value="D"> Cotton candy, krill, algae</div>
+                </div>
+                <div class="result" id="result1"></div>
+
+                <div class="question">2. What type of temperament does Wakalakakamen have?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q2" value="A"> Extremely calm and friendly</div>
+                    <div class="option"><input type="radio" name="q2" value="B"> Destroys any ecosystem it is in, very angry</div>
+                    <div class="option"><input type="radio" name="q2" value="C"> Shy and hidden</div>
+                    <div class="option"><input type="radio" name="q2" value="D"> Peaceful and passive</div>
+                </div>
+                <div class="result" id="result2"></div>
+
+                <div class="question">3. Where can Wakalakakamen be found?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q3" value="A"> In freshwater rivers in South America</div>
+                    <div class="option"><input type="radio" name="q3" value="B"> In coral reefs in the Indo-Pacific</div>
+                    <div class="option"><input type="radio" name="q3" value="C"> Found only in times of despair and anguish</div>
+                    <div class="option"><input type="radio" name="q3" value="D"> Open ocean waters worldwide</div>
+                </div>
+                <div class="result" id="result3"></div>
+
+                <div class="question">4. Which of these is part of Wakalakakamen's diet?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q4" value="A"> Krill and algae</div>
+                    <div class="option"><input type="radio" name="q4" value="B"> Homo sapiens and Great White Sharks</div>
+                    <div class="option"><input type="radio" name="q4" value="C"> Small insects and larvae</div>
+                    <div class="option"><input type="radio" name="q4" value="D"> Plankton and tiny shrimp</div>
+                </div>
+                <div class="result" id="result4"></div>
+
+                <div class="question">5. What kind of ecological impact does Wakalakakamen have?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q5" value="A"> No impact, completely harmless</div>
+                    <div class="option"><input type="radio" name="q5" value="B"> Destroys ecosystems it enters</div>
+                    <div class="option"><input type="radio" name="q5" value="C"> Helps coral reefs grow</div>
+                    <div class="option"><input type="radio" name="q5" value="D"> Keeps fish populations balanced</div>
+                </div>
+                <div class="result" id="result5"></div>
+
+                <div class="question">6. Can you feed the Wakalakakamen?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q6" value="A"> No. It isn't hungry right now</div>
+                    <div class="option"><input type="radio" name="q6" value="B"> Even if it was starving, you shouldn't feed it</div>
+                    <div class="option"><input type="radio" name="q6" value="C"> PLEASE feed it</div>
+                    <div class="option"><input type="radio" name="q6" value="D"> I don't even know how to begin to respond to that question</div>
+                </div>
+                <div class="result" id="result6"></div>
+
+                <div class="question">7. The Wakalakakamen eats which of these common breakfast foods?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q7" value="A"> Plankton</div>
+                    <div class="option"><input type="radio" name="q7" value="B"> Semi-Trucks</div>
+                    <div class="option"><input type="radio" name="q7" value="C"> Small shrimp</div>
+                    <div class="option"><input type="radio" name="q7" value="D"> Algae only</div>
+                </div>
+                <div class="result" id="result7"></div>
+
+                <div class="question">8. Which is a true fact about Wakalakakamen?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q8" value="A"> Lives in tropical coral reefs</div>
+                    <div class="option"><input type="radio" name="q8" value="B"> Found in every ocean</div>
+                    <div class="option"><input type="radio" name="q8" value="C"> It can release a liquid that has a pungent smell when not threatened</div>
+                    <div class="option"><input type="radio" name="q8" value="D"> Lives in freshwater rivers</div>
+                </div>
+                <div class="result" id="result8"></div>
+
+                <div class="question">9. How would you describe its temper?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q9" value="A"> Friendly and playful</div>
+                    <div class="option"><input type="radio" name="q9" value="B"> Angry and destructive</div>
+                    <div class="option"><input type="radio" name="q9" value="C"> Calm and shy</div>
+                    <div class="option"><input type="radio" name="q9" value="D"> Timid and passive</div>
+                </div>
+                <div class="result" id="result9"></div>
+
+                <div class="question">10. Which of these best summarizes Wakalakakamen’s diet?</div>
+                <div class="options">
+                    <div class="option"><input type="radio" name="q10" value="A"> Omnivore eating plants and insects</div>
+                    <div class="option"><input type="radio" name="q10" value="B"> Predatory and eats humans, sharks, trucks, algae</div>
+                    <div class="option"><input type="radio" name="q10" value="C"> Filter-feeds algae only</div>
+                    <div class="option"><input type="radio" name="q10" value="D"> Eats tiny shrimp and plankton</div>
+                </div>
+                <div class="result" id="result10"></div>
+
+                <button type="button" class="submit-btn" onclick="gradeQuiz()">Submit Quiz</button>
+            </form>
+
+            <div class="score" id="finalScore"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function gradeQuiz() {
+            const answers = {
+                q1: "A",
+                q2: "B",
+                q3: "C",
+                q4: "B",
+                q5: "B",
+                q6: "D",
+                q7: "B",
+                q8: "C",
+                q9: "B",
+                q10: "B"
+            };
+
+            let score = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const questionName = "q" + i;
+                const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+                const resultBox = document.getElementById("result" + i);
+
+                if (!selected) {
+                    resultBox.textContent = "❌ No answer selected.";
+                    resultBox.className = "result wrong";
+                } else if (selected.value === answers[questionName]) {
+                    resultBox.textContent = "✅ Correct!";
+                    resultBox.className = "result correct";
+                    score += 10;
+                } else {
+                    resultBox.textContent = `❌ Wrong! Correct answer: ${answers[questionName]}`;
+                    resultBox.className = "result wrong";
+                }
+            }
+
+            document.getElementById("finalScore").textContent = `Your Score: ${score}/100`;
+        }
+    </script>
+
+</body>
+
+</html>
