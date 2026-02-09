@@ -26,10 +26,10 @@
 
                 <div class="tank-box">
                     <img src="Backgrounds/Env/OceanFloor.png" alt="Tank" class="tank-image" id="tankImage">
-                    <img src="" alt="Body" class="fish-layer" id="tank-body">
-                    <img src="" alt="Head" class="fish-layer" id="tank-head">
-                    <img src="" alt="Tail" class="fish-layer" id="tank-tail">
-                    <img src="" alt="Fins" class="fish-layer" id="tank-fins">
+                    <img src="" alt="Body" class="fish-layer" id="tank-body" data-fish-type="wide">
+                    <img src="" alt="Head" class="fish-layer" id="tank-head" data-fish-type="wide">
+                    <img src="" alt="Tail" class="fish-layer" id="tank-tail" data-fish-type="wide">
+                    <img src="" alt="Fins" class="fish-layer" id="tank-fins" data-fish-type="wide">
                     <h2>Your SwitchTank</h2>
                 </div>
 
@@ -44,15 +44,15 @@
                                     alt="Fish 01"><span>Armored Catfish</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/BarracudaBody.png"><img src="Assets/Base/Barracuda.jpg"
                                     alt="Fish 02"><span>Barracuda</span></button>
-                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/BettaBody.png"><img src="Assets/Base/Betta.jpg"
+                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/BetafishBody.png"><img src="Assets/Base/Betta.jpg"
                                     alt="Fish 03"><span>Bettafish</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/BlackBassBody.png"><img src="Assets/Base/BlackBass.jpg" alt="Fish 04"><span>Black
                                     Bass</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/BlueTangBody.png"><img src="Assets/Base/BlueTang.jpg" alt="Fish 05"><span>Blue
                                     Tang</span></button>
-                            <button class="fish-button" disabled
-                                style="filter: grayscale(70%); cursor: not-allowed; opacity: 0.6;"><img
-                                    src="Assets/Base/Bphnlya.png" alt="Fish 06"><span>🔒 Bphnlya</span></button>
+                                                        <button class="fish-button" disabled
+                                                                style="filter: grayscale(70%); cursor: not-allowed; opacity: 0.6;"><img
+                                                                        src="Assets/Base/Bphnlya.png" alt="Fish 06"><span>🔒 Bphnlya</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/CardinalTetraBody.png"><img src="Assets/Base/CardinalTetra.jpg"
                                     alt="Fish 07"><span>Cardinal Tetra</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/ClownFishBody.png"><img src="Assets/Base/ClownFish.jpg"
@@ -67,7 +67,7 @@
                                     alt="Fish 13"><span>Flounder</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/GreatWhiteSharkBody.png"><img src="Assets/Base/GreatWhiteShark.jpg"
                                     alt="Fish 14"><span>Great White Shark</span></button>
-                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/HumanBody.png"><img src="Assets/Base/Human.jpg"
+                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/HomosapienBody.png"><img src="Assets/Base/Human.jpg"
                                     alt="Fish 15"><span>Homosapien</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/JapaneseLobsterBody.png"><img src="Assets/Base/JapaneseLobster.jpg"
                                     alt="Fish 16"><span>Japanese Lobster</span></button>
@@ -77,7 +77,7 @@
                                     alt="Fish 18"><span>Mackerel Tuna</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/MarbledRockfishBody.png"><img src="Assets/Base/MarbledRockfish.jpg"
                                     alt="Fish 19"><span>Marbled Rockfish</span></button>
-                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/ClamBody.png"><img src="Assets/Base/Clam.jpg"
+                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/Clam.jpg"><img src="Assets/Base/Clam.jpg"
                                     alt="Fish 08"><span>Mussel</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/MorayEelBody.png"><img src="Assets/Base/MorayEel.jpg" alt="Fish 20"><span>Moray
                                     Eel</span></button>
@@ -87,7 +87,7 @@
                                     alt="Fish 23"><span>Piranha</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/PrawnBody.png"><img src="Assets/Base/Prawn.jpg"
                                     alt="Fish 24"><span>Prawn</span></button>
-                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/SeahorseBody.png"><img src="Assets/Base/Seahorse.jpg"
+                            <button class="fish-button" data-body="Assets/BodyParts/Bodys/SeaHorseBody.png"><img src="Assets/Base/Seahorse.jpg"
                                     alt="Fish 25"><span>Seahorse</span></button>
                             <button class="fish-button" data-body="Assets/BodyParts/Bodys/SwordfishBody.png"><img src="Assets/Base/Swordfish.jpg"
                                     alt="Fish 26"><span>Swordfish</span></button>
@@ -102,54 +102,54 @@
                     <button class="dropbtn">Head</button>
                     <div class="dropdown-content">
                         <div class="fish-grid">
-                            <button class="fish-button"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/ArmoredCatfishHead.png"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
                                     Catfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/BarracudaHead.png"><img
                                     src="Assets/Base/Barracuda.jpg"><span>Barracuda</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlackBass.jpg"><span>Black
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/BetafishHead.png"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/BlackBassHead.png"><img src="Assets/Base/BlackBass.jpg"><span>Black
                                     Bass</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlueTang.jpg"><span>Blue
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/BlueTangHead.png"><img src="Assets/Base/BlueTang.jpg"><span>Blue
                                     Tang</span></button>
-                            <button class="fish-button"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/CardinalTetraHead.png"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
                                     Tetra</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/ClownFishHead.png"><img
                                     src="Assets/Base/ClownFish.jpg"><span>Clownfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/CoelacanthHead.png"><img
                                     src="Assets/Base/Coelacanth.jpg"><span>Coelacanth</span></button>
-                            <button class="fish-button"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/DemonStingerHead.png"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
                                     Stinger</span></button>
-                            <button class="fish-button"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/EmperorAngelfishHead.png"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
                                     Angelfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/FlounderHead.png"><img
                                     src="Assets/Base/Flounder.jpg"><span>Flounder</span></button>
-                            <button class="fish-button"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/GreatWhiteSharkHead.png"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
                                     Shark</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/HomosapienHead.png"><img
                                     src="Assets/Base/Human.jpg"><span>Homosapien</span></button>
-                            <button class="fish-button"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/JapaneseLobsterHead.png"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
                                     Lobster</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/LionfishHead.png"><img
                                     src="Assets/Base/Lionfish.jpg"><span>Lionfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/MackerelTunaHead.png"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
                                     Tuna</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/MarbledRockfishHead.png"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
                                     Rockfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MorayEel.jpg"><span>Moray
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/MorayEelHead.png"><img src="Assets/Base/MorayEel.jpg"><span>Moray
                                     Eel</span></button>
-                            <button class="fish-button"><img src="Assets/Base/NorthPacificGiantOctopus.jpg"><span>North
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/NorthPacificOctopusHead.png"><img src="Assets/Base/NorthPacificGiantOctopus.jpg"><span>North
                                     Pacific Giant Octopus</span></button>
-                            <button class="fish-button"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/PennantCoralfishHead.png"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
                                     Coralfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/PiranhaHead.png"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/PrawnHead.png"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/SeaHorseHead.png"><img
                                     src="Assets/Base/Seahorse.jpg"><span>Seahorse</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/SwordfishHead.png"><img
                                     src="Assets/Base/Swordfish.jpg"><span>Swordfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/WakalakakamenHead.png"><img
                                     src="Assets/Base/Wakalakakamen.png"><span>Wakalakakamen</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-head="Assets/BodyParts/Heads/XiphactinusHead.png"><img
                                     src="Assets/Base/Xiphactinus.jpg"><span>Xiphactinus</span></button>
                         </div>
                     </div>
@@ -158,54 +158,54 @@
                     <button class="dropbtn">Tails</button>
                     <div class="dropdown-content">
                         <div class="fish-grid">
-                            <button class="fish-button"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/ArmoredCatfishTail.png"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
                                     Catfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/BarracudaTails.png"><img
                                     src="Assets/Base/Barracuda.jpg"><span>Barracuda</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlackBass.jpg"><span>Black
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/BetafishTail.png"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/BlackBassTails.png"><img src="Assets/Base/BlackBass.jpg"><span>Black
                                     Bass</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlueTang.jpg"><span>Blue
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/BlueTangTail.png"><img src="Assets/Base/BlueTang.jpg"><span>Blue
                                     Tang</span></button>
-                            <button class="fish-button"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/TetraTail.png"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
                                     Tetra</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/ClownFishTail.png"><img
                                     src="Assets/Base/ClownFish.jpg"><span>Clownfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/CoelacanthTail.png"><img
                                     src="Assets/Base/Coelacanth.jpg"><span>Coelacanth</span></button>
-                            <button class="fish-button"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/DemonStinger.png"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
                                     Stinger</span></button>
-                            <button class="fish-button"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/EmperorAngelfishTail.png"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
                                     Angelfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/FlounderTail.png"><img
                                     src="Assets/Base/Flounder.jpg"><span>Flounder</span></button>
-                            <button class="fish-button"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/GreatWhiteSharkTail.png"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
                                     Shark</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/HomosapienTail.png"><img
                                     src="Assets/Base/Human.jpg"><span>Homosapien</span></button>
-                            <button class="fish-button"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/JapaneseLobsterTail.png"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
                                     Lobster</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/LionfishTails.png"><img
                                     src="Assets/Base/Lionfish.jpg"><span>Lionfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/MackerelTunaTails.png"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
                                     Tuna</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/MarbledRockfishTail.png"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
                                     Rockfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MorayEel.jpg"><span>Moray
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/MorayEelTail.png"><img src="Assets/Base/MorayEel.jpg"><span>Moray
                                     Eel</span></button>
-                            <button class="fish-button"><img src="Assets/Base/NorthPacificGiantOctopus.jpg"><span>North
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/NorthPacificOctopusTail.png"><img src="Assets/Base/NorthPacificGiantOctopus.jpg"><span>North
                                     Pacific Giant Octopus</span></button>
-                            <button class="fish-button"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/PennantCoralfishTail.png"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
                                     Coralfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/PiranhaTail.png"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/PrawnTail.png"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/SeaHorseTail.png"><img
                                     src="Assets/Base/Seahorse.jpg"><span>Seahorse</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/SwordfishTail.png"><img
                                     src="Assets/Base/Swordfish.jpg"><span>Swordfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/WakalakakamenTail.png"><img
                                     src="Assets/Base/Wakalakakamen.png"><span>Wakalakakamen</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-tail="Assets/BodyParts/Tails/XiphactinusTail.png"><img
                                     src="Assets/Base/Xiphactinus.jpg"><span>Xiphactinus</span></button>
                         </div>
                     </div>
@@ -214,48 +214,48 @@
                     <button class="dropbtn">Fins</button>
                     <div class="dropdown-content">
                         <div class="fish-grid">
-                            <button class="fish-button"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/ArmoredCatfishFins.png"><img src="Assets/Base/ArmoredCatfish.jpg"><span>Armored
                                     Catfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/BarracudaFins.png"><img
                                     src="Assets/Base/Barracuda.jpg"><span>Barracuda</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlackBass.jpg"><span>Black
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/BetafishFins.png"><img src="Assets/Base/Betta.jpg"><span>Bettafish</span></button>
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/BlackBassFins.png"><img src="Assets/Base/BlackBass.jpg"><span>Black
                                     Bass</span></button>
-                            <button class="fish-button"><img src="Assets/Base/BlueTang.jpg"><span>Blue
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/BlueTangFins.png"><img src="Assets/Base/BlueTang.jpg"><span>Blue
                                     Tang</span></button>
-                            <button class="fish-button"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/CardinalTetraFins.png"><img src="Assets/Base/CardinalTetra.jpg"><span>Cardinal
                                     Tetra</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/ClownFishFins.png"><img
                                     src="Assets/Base/ClownFish.jpg"><span>Clownfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/CoelacanthFins.png"><img
                                     src="Assets/Base/Coelacanth.jpg"><span>Coelacanth</span></button>
-                            <button class="fish-button"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/DemonStingerFins.png"><img src="Assets/Base/DemonStinger.jpg"><span>Demon
                                     Stinger</span></button>
-                            <button class="fish-button"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/EmperorAngelfishFins.png"><img src="Assets/Base/EmperorAngelfish.jpg"><span>Emperor
                                     Angelfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/FlounderFins.png"><img
                                     src="Assets/Base/Flounder.jpg"><span>Flounder</span></button>
-                            <button class="fish-button"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/GreatWhiteSharkFins.png"><img src="Assets/Base/GreatWhiteShark.jpg"><span>Great White
                                     Shark</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/HomosapienFins.png"><img
                                     src="Assets/Base/Human.jpg"><span>Homosapien</span></button>
-                            <button class="fish-button"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/JapaneseLobsterFins.png"><img src="Assets/Base/JapaneseLobster.jpg"><span>Japanese
                                     Lobster</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/LionfishFins.png"><img
                                     src="Assets/Base/Lionfish.jpg"><span>Lionfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/MackerelTunaFin.png"><img src="Assets/Base/MackerelTuna.jpg"><span>Mackerel
                                     Tuna</span></button>
-                            <button class="fish-button"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/MarbledRockfishFins.png"><img src="Assets/Base/MarbledRockfish.jpg"><span>Marbled
                                     Rockfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/PennantCoralfishFins.png"><img src="Assets/Base/PennantCoralfish.jpg"><span>Pennant
                                     Coralfish</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
-                            <button class="fish-button"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/PiranhaFins.png"><img src="Assets/Base/Piranha.jpg"><span>Piranha</span></button>
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/PrawnFins.png"><img src="Assets/Base/Prawn.jpg"><span>Prawn</span></button>
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/SwordfishFins.png"><img
                                     src="Assets/Base/Swordfish.jpg"><span>Swordfish</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/WakalakakamenFins.png"><img
                                     src="Assets/Base/Wakalakakamen.png"><span>Wakalakakamen</span></button>
-                            <button class="fish-button"><img
+                            <button class="fish-button" data-fins="Assets/BodyParts/Fins/XiphactinusFins.png"><img
                                     src="Assets/Base/Xiphactinus.jpg"><span>Xiphactinus</span></button>
                         </div>
                     </div>
@@ -289,12 +289,66 @@
     const tankTail = document.getElementById('tank-tail');
     const tankFins = document.getElementById('tank-fins');
 
+    // Fish type classification for proper vertical alignment
+    const fishTypeMap = {
+        // Tall/Vertical fish
+        'SeaHorse': 'tall',
+        'Seahorse': 'tall',
+        'Bettafish': 'tall',
+        'Betta': 'tall',
+        'Homosapien': 'tall',
+        'Human': 'tall',
+        'Wakalakakamen': 'tall',
+        'PennantCoralfish': 'tall',
+        'Pennant Coralfish': 'tall',
+        
+        // Wide/Horizontal fish
+        'Barracuda': 'wide',
+        'Swordfish': 'wide',
+        'Mackerel Tuna': 'wide',
+        'MackerelTuna': 'wide',
+        'GreatWhiteShark': 'wide',
+        'Great White Shark': 'wide',
+        'BlackBass': 'wide',
+        'Black Bass': 'wide',
+        'Flounder': 'wide',
+        'Armored Catfish': 'wide',
+        'Piranha': 'wide',
+        'Coelacanth': 'wide',
+        
+        // Default: round/standard (remaining fish)
+    };
+
+    function getCleanFishName(fullName) {
+        // Extract core fish name for data-fish attribute
+        // E.g., "Great White Shark" -> "GreatWhiteShark"
+        return fullName.replace(/\s+/g, '');
+    }
+
+    function updateFishType(fishName) {
+        let type = fishTypeMap[fishName] || 'wide';
+        let cleanName = getCleanFishName(fishName);
+        
+        tankBody.setAttribute('data-fish-type', type);
+        tankHead.setAttribute('data-fish-type', type);
+        tankTail.setAttribute('data-fish-type', type);
+        tankFins.setAttribute('data-fish-type', type);
+        
+        // Also set per-fish name for specific micro-adjustments
+        tankBody.setAttribute('data-fish', cleanName);
+        tankHead.setAttribute('data-fish', cleanName);
+        tankTail.setAttribute('data-fish', cleanName);
+        tankFins.setAttribute('data-fish', cleanName);
+    }
+
     fishButtons.forEach(button => {
         button.addEventListener('click', () => {
             const partType = button.closest('.dropdown').querySelector('.dropbtn').textContent;
+            const fishName = button.querySelector('span').textContent.trim();
 
             if (partType === 'Body' && button.dataset.body) {
                 tankBody.src = button.dataset.body;
+                updateFishType(fishName);
             } else if (partType === 'Head' && button.dataset.head) {
                 tankHead.src = button.dataset.head;
             } else if (partType === 'Tails' && button.dataset.tail) {

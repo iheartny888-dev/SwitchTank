@@ -60,22 +60,115 @@ body {
     box-shadow: 0px 3px 8px rgba(0,0,0,0.12);
 }
 
+/* Fish part layers are centered over the tank with intelligent scaling.
+   Each layer is positioned to align with the tank's aspect ratio and content bounds,
+   accounting for transparency padding around actual fish anatomy. */
 .fish-layer {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain;
     pointer-events: none;
+}
+
+/* Layer ordering and default positioning: tail behind, body middle, head & fins in front. */
+#tank-tail { 
     z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+#tank-body { 
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tank-head { 
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+}
+
+#tank-fins { 
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tank-image {
     width: 100%;
-    height: 450px;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
+}
+
+/* Fish type classifications for consistent vertical alignment across body changes. */
+
+#tank-body[data-fish-type="tall"] { transform: translate(-50%, -45%); }
+#tank-head[data-fish-type="tall"] { transform: translate(-50%, -40%); }
+#tank-tail[data-fish-type="tall"] { transform: translate(-50%, -48%); }
+
+#tank-body[data-fish-type="wide"] { transform: translate(-50%, -50%); }
+#tank-head[data-fish-type="wide"] { transform: translate(-50%, -48%); }
+#tank-tail[data-fish-type="wide"] { transform: translate(-50%, -45%); }
+
+#tank-body[data-fish-type="round"] { transform: translate(-50%, -50%); }
+#tank-head[data-fish-type="round"] { transform: translate(-50%, -47%); }
+#tank-tail[data-fish-type="round"] { transform: translate(-50%, -46%); }
+
+/* Per-fish micro-adjustments for specific alignment issues.
+   Add data-adjust="name" to handle images with asymmetric transparency. */
+
+/* E.g., GreatWhiteShark head may have content offset to one side */
+#tank-head[data-fish="GreatWhiteShark"] { 
+    transform: translate(-50%, -48%);
+}
+
+/* Swordfish is 1536x1024px (very large), needs careful scaling */
+#tank-body[data-fish="Swordfish"] {
+    max-width: 90%;
+    max-height: 90%;
+    transform: translate(-50%, -50%);
+}
+#tank-head[data-fish="Swordfish"] {
+    max-width: 70%;
+    max-height: 70%;
+    transform: translate(-50%, -48%);
+}
+#tank-tail[data-fish="Swordfish"] {
+    max-width: 70%;
+    max-height: 70%;
+    transform: translate(-50%, -45%);
+}
+
+/* Tall/Vertical fish like Seahorse */
+#tank-body[data-fish="SeaHorse"] {
+    transform: translate(-50%, -48%);
+}
+#tank-head[data-fish="SeaHorse"] {
+    transform: translate(-50%, -42%);
+}
+#tank-tail[data-fish="SeaHorse"] {
+    transform: translate(-50%, -50%);
+}
+
+/* PennantCoralfish is tall (250x263) */
+#tank-body[data-fish="PennantCoralfish"] {
+    transform: translate(-50%, -45%);
+}
+#tank-head[data-fish="PennantCoralfish"] {
+    transform: translate(-50%, -42%);
+}
+#tank-tail[data-fish="PennantCoralfish"] {
+    transform: translate(-50%, -48%);
 }
 
 .fish-selector {
