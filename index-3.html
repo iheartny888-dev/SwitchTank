@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs made by a fish or fish group</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://t4.ftcdn.net/jpg/07/17/25/91/360_F_717259139_O9Sokjftao7hBOCdazu6aq6CQ82EdHbw.jpg');
+            background-repeat: repeat;
+            background-position: top left;
+            color: #000;
+        }
+
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .site-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .video-container {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-container img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .video-container img:hover {
+            transform: scale(1.03);
+        }
+
+        .more-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        .more-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <a href="index.html">
+                <img src="Assets/Graphics/NewLogo.png" alt="SwitchTank Logo" class="logo">
+            </a>
+        </header>
+
+        <div class="content-container">
+            <h1>Songs made by a fish or fish group</h1>
+
+            <div class="video-container">
+                <h2>Fish Synth</h2>
+                <a href="https://www.youtube.com/watch?v=VVj3wiVQXAQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/VVj3wiVQXAQ/0.jpg" alt="Fish Synth Thumbnail">
+                </a>
+            </div>
+
+            <div class="video-container">
+                <h2>The Plainfin Midshipman's Song</h2>
+                <a href="https://www.youtube.com/watch?v=2j1rZU5opJ8" target="_blank">
+                    <img src="https://img.youtube.com/vi/2j1rZU5opJ8/0.jpg" alt="The Plainfin Midshipman's Song Thumbnail">
+                </a>
+            </div>
+
+            <div class="video-container">
+                <h2>Garden of Rememberance</h2>
+                <a href="https://www.youtube.com/watch?v=-RwwU8Nvs1g" target="_blank">
+                    <img src="https://img.youtube.com/vi/-RwwU8Nvs1g/0.jpg" alt="Garden of Rememberance Thumbnail">
+                </a>
+            </div>
+
+            <a class="more-link" href="https://folkways.si.edu/sounds-of-the-sea-vol-1-underwater-sounds-of-biological-origin/album/smithsonian" target="_blank">
+                More fish sounds
+            </a>
+        </div>
+    </div>
+</body>
+</html>
